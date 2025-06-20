@@ -415,7 +415,7 @@ let id = 1;
 async function get_combinations() {
     creatable = 0;
     combinations = {};
-    elements = ["air", "earth", "fire", "water"]
+    elements = ["air", "cold", "earth", "hot", "water"]
     let file = await fetch("static/txt/combinations.txt");
     let text = await file.text();
     let lines = text.split("\n");
@@ -514,7 +514,7 @@ let creatable = 0;
 let elements = [];
 let underlined = [];
 let combinations = {}; get_combinations();
-let created = ["earth", "fire", "water", "air"]
+let created = ["earth", "hot", "cold", "water", "air"]
 let hide_items = false;
 
 // Dragging
@@ -934,7 +934,7 @@ document.getElementsByClassName("loadsave")[0].onclick = (e) => {
         
         let created_elements = raw_string.split("&");
         let to_create = [];
-        created = ["air", "water", "earth", "fire"];
+        created = ["air", "water", "earth", "hot", "cold"];
         
         for (element of created_elements) {
             if (k_from_v(combinations, element) || created.includes(element)) {
@@ -1189,7 +1189,7 @@ async function load_from_code() {
     // Add elements
     let created_elements = raw_string.split("&");
     let to_create = [];
-    created = ["air", "water", "earth", "fire"];
+    created = ["air", "water", "earth", "hot", "cold"];
     
     for (element of created_elements) {
         if (k_from_v(combinations, element) || created.includes(element)) {
