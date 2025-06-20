@@ -891,7 +891,7 @@ async function show_help() {
     let toast = document.querySelector("body > div.large-toast");
     let ccanvas = document.querySelector("body > div.clear-canvas");
 
-    toast.innerHTML = 'Welcome to Little Archiemy!<br>The game works by combining two (or more) elements in order to create something new. Combine elements by dragging them over one another.<br>Useful shortcuts:<br><br>- To clear the canvas, press escape.<br>- To move the canvas, hold ctrl and drag on the background.<br>- To hide final items, uncheck the checkbox in the sidebar.<br><p onclick="show_help();">[Got it!]</p> <a href="/static/changelog.txt" target="_blank" onclick="show_help();">[View Changelog]</a>';
+    toast.innerHTML = 'Welcome to Little Alli-chemy!<br>The game works by combining two (or more) elements in order to create something new. Combine elements by dragging them over one another.<br>Useful shortcuts:<br><br>- To clear the canvas, press escape.<br>- To move the canvas, hold ctrl and drag on the background.<br>- To hide final items, uncheck the checkbox in the sidebar.<br><p onclick="show_help();">[Got it!]</p> <a href="/static/changelog.txt" target="_blank" onclick="show_help();">[View Changelog]</a>';
 
     if (toast.classList.contains("inactive")) {
         ccanvas.classList.toggle("active");
