@@ -1064,7 +1064,7 @@ async function register_achievements() {
     achievements.register(creatable, "Unhealthy", "You've completed the game... or cheated.");
 
     // achievements.register_complex(items (+ sep), name, explanation);
-    achievements.register_complex("HAS pneumonoultramicroscopicsilicovolcanoconiosis + allergy + coronavirus", "Pathologist", "Call the CDC!");    
+    achievements.register_complex("HAS tally hall + will wood", "Neurodivergent", "Made Tally Hall and Will Wood!");    
     
     achievements.register_complex("TIME 1800000", "Time flies like an arrow", "You've spent 30 minutes straight on the game.", true);
     achievements.register_complex("TIME 3600000", "Don't forget to save!", "You've been playing the game for a whole hour!", true);
