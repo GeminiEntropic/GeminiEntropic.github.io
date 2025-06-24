@@ -1054,13 +1054,13 @@ document.getElementsByClassName("search")[0].oninput = function (e) {
 async function register_achievements() {
     while (creatable == 0) await sleep(1);
     // achievements.register(count, name, explanation);
-    achievements.register(5, "Baby Steps", "Your first element!");
-    achievements.register(29, "Getting Started", "You created 25 elements");
-    achievements.register(54, "Getting Going", "You created 50 elements!");
-    achievements.register(104, "Dedicated", "100 elements in and still going strong!");
-    achievements.register(204, "Getting Serious", "200 elements! Congratulations!");
-    achievements.register(304, "Serious", "300 elements... Incredible.");
-    achievements.register(404, "Getting unhealthy", "400 elements... Too many.");
+    achievements.register(6, "Baby Steps", "Your first element!");
+    achievements.register(30, "Getting Started", "You created 25 elements");
+    achievements.register(55, "Getting Going", "You created 50 elements!");
+    achievements.register(105, "Dedicated", "100 elements in and still going strong!");
+    achievements.register(205, "Getting Serious", "200 elements! Congratulations!");
+    achievements.register(305, "Serious", "300 elements... Incredible.");
+    achievements.register(405, "Getting unhealthy", "400 elements... Too many.");
     achievements.register(creatable, "Unhealthy", "You've completed the game... or cheated.");
 
     // achievements.register_complex(items (+ sep), name, explanation);
